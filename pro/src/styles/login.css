@@ -1,0 +1,148 @@
+/* Center the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Login form box */
+.login-box {
+  width: 350px;
+  padding: 25px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Proper heading alignment */
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 👈 Centering input fields */
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.input-group label {
+  width: 80%;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 80%; /* 👈 Centered properly */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Forgot Password Styling */
+.forgot-password {
+  position: absolute;
+  right: 10%;
+  bottom: -32px;
+  font-size: 13px;
+  color: red;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Login button styling */
+.login-btn {
+  width: 80%;
+  padding: 12px;
+  margin-top: 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .input-group label {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .input-group input {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .login-btn {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .forgot-password {
+    right: 5%;
+    bottom: -28px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 455px) {
+  .login-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-group label {
+    font-size: 12px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .forgot-password {
+    font-size: 11px;
+    bottom: -25px;
+    right: 5%;
+  }
+}
